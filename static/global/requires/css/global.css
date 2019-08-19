@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter|Kanit|Lexend+Deca|Lora|Noto+Sans+JP|Oxygen|Roboto+Slab&display=swap");
+
+/* 
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Lora', serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Kanit', sans-serif;
+*/
+
+body {
+  font-size: 16px;
+  font-family: 'Bitter', serif;
+}

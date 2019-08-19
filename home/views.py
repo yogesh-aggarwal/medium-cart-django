@@ -6,4 +6,7 @@ class EndPoint:
     
     @staticmethod
     def index(request):
-        return render(request, "home/index.html")
+        attributes = {
+            "title": "Medium cart"
+        }
+        return render(request, "home/index.html", attributes)

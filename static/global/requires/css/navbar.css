@@ -1,0 +1,19 @@
+#nav-title {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 0 1% 0 1%;
+}
+
+#nav-title:hover {
+  color: rgb(238, 238, 238);
+}
+
+#search-box {
+  width: 320px;
+}
+
+#search-box:focus,
+#search-box:hover {
+  width: 400px;
+}
