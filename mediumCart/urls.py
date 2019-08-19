@@ -19,3 +19,11 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+from django.urls import path, include
+
+urlpatterns = [
+    path("", include("home.urls"), name="Home"),
+    path("blog", include("blog.urls"), name="Blog"),
+    path("checkout", include("checkout.urls"), name="Checkout"),
+    path("user", include("user.urls"), name="User"),
+]

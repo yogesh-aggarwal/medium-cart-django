@@ -27,24 +27,26 @@
             "presentation": {
                 "echo": false,
                 "reveal": "always",
-                "focus": false,
+                "focus": true,
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": false
-            }
+            },
+            "problemMatcher": []
         },
         {
-            "label": "[Django] Make migrate",
+            "label": "[Django] Migrate",
             "type": "shell",
             "command": "python3 manage.py migrate",
             "presentation": {
                 "echo": false,
                 "reveal": "always",
-                "focus": false,
+                "focus": true,
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": false
-            }
+            },
+            "problemMatcher": []
         }
     ]
 }

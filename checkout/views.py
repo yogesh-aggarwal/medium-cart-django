@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+class EndPoint:
+    def __init__(self):
+        pass
+    
+    @staticmethod
+    def index(request):
+        return render(request, "checkout/index.html")
