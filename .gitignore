@@ -215,3 +215,4 @@ dmypy.json
 
 private/*
 garbage/*
+temp/*
