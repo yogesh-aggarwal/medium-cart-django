@@ -1,0 +1,25 @@
+{% extends 'contact/basic.html' %} {% block title %}Contact{% endblock title %}
+{% block body %}
+<div class="page-heading">Contact Us</div>
+<div class="description">
+  If you have some problems regarding anything, fill up the form below & contact
+  us.
+</div>
+
+<form class="container" method="POST">
+  {% csrf_token %}
+  <div class="form-type">Full Name</div>
+  <input type="text" class="input" placeholder="Name" />
+  <div class="form-type">Email address</div>
+  <input type="email" class="input" placeholder="Email" />
+  <div class="form-type">Issue</div>
+  <textarea
+    type="text"
+    class="input"
+    id="textarea"
+    placeholder="Describe your issue here..."
+  ></textarea
+  ><br />
+  <button class="btn btn-primary" id="submitButton">Submit</button>
+</form>
+{% endblock body %}
