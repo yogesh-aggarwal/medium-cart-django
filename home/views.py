@@ -39,7 +39,7 @@ class Tools:
                 "categories": record[8].split(" =+=+=@#$%^&*()=+=+= "),
                 "reviews": record[9].split(" =+=+=@#$%^&*()=+=+= "),
                 "assets": record[10].split(" =+=+=@#$%^&*()=+=+= "),
-                "quantity": record[11].split(" =+=+=@#$%^&*()=+=+= "),
+                "quantity": record[11],
                 "sale": record[12],
             }
         print(parse["125785"]["reviews"])

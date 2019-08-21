@@ -1,5 +1,3 @@
-console.log("[Home] Integrated!");
-
 addProduct = _id => {
   console.log(_id);
 };

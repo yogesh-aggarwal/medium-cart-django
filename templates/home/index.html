@@ -8,56 +8,12 @@
 {% endblock top %}
 
 {% block body %}
-<!--
-<div class="cards-body">
-  <div class="card">
-      <img class="card-thumbnail" src="/static/products/product1.png">
-      <h3 class="card-title">{{ product.title }}</h3>
-      <p class="card-description">{{ product.shortDesc }}</p>
-      <divider class="card-divider"></divider>
-      <button class="btn btn-primary add-to-cart" id="{{ product.id }}" onclick="addProduct(this.id)">Add to cart</button>
-      <button class="btn btn-secondary quick-view" id="{{ product.id }}" onclick="quickView(this.id)">Quick View</button>
-  </div>
-  <div class="card">
-      <img class="card-thumbnail" src="/static/products/product2.png">
-      <h3 class="card-title">{{ product.title }}</h3>
-      <p class="card-description">{{ product.shortDesc }}</p>
-      <divider class="card-divider"></divider>
-      <button class="btn btn-primary add-to-cart" id="{{ product.id }}" onclick="addProduct(this.id)">Add to cart</button>
-      <button class="btn btn-secondary quick-view" id="{{ product.id }}" onclick="quickView(this.id)">Quick View</button>
-  </div>
-  <div class="card">
-      <img class="card-thumbnail" src="/static/products/product3.png">
-      <h3 class="card-title">{{ product.title }}</h3>
-      <p class="card-description">{{ product.shortDesc }}</p>
-      <divider class="card-divider"></divider>
-      <button class="btn btn-primary add-to-cart" id="{{ product.id }}" onclick="addProduct(this.id)">Add to cart</button>
-      <button class="btn btn-secondary quick-view" id="{{ product.id }}" onclick="quickView(this.id)">Quick View</button>
-  </div>
-  <div class="card">
-      <img class="card-thumbnail" src="/static/products/product4.png">
-      <h3 class="card-title">{{ product.title }}</h3>
-      <p class="card-description">{{ product.shortDesc }}</p>
-      <divider class="card-divider"></divider>
-      <button class="btn btn-primary add-to-cart" id="{{ product.id }}" onclick="addProduct(this.id)">Add to cart</button>
-      <button class="btn btn-secondary quick-view" id="{{ product.id }}" onclick="quickView(this.id)">Quick View</button>
-  </div>
-  <div class="card">
-      <img class="card-thumbnail" src="/static/products/product5.png">
-      <h3 class="card-title">{{ product.title }}</h3>
-      <p class="card-description">{{ product.shortDesc }}</p>
-      <divider class="card-divider"></divider>
-      <button class="btn btn-primary add-to-cart" id="{{ product.id }}" onclick="addProduct(this.id)">Add to cart</button>
-      <button class="btn btn-secondary quick-view" id="{{ product.id }}" onclick="quickView(this.id)">Quick View</button>
-  </div>
-</div>
--->
 <div class="cards-body">
 {% for id in products.items %}
 {% comment %} <!-- {% endcomment %}
   <div class="card">
     <img class="card-thumbnail" src="{{ id.1.images.0 }}">
-    <h3 class="card-title">{{ id.1.name }}</h3>
+    <h3 class="card-title">{{ id.1.name|slice:"0:50" }}</h3>
     <p class="card-description">{{ id.1.shortDesc|slice:"0:150" }}...</p>
     <divider class="card-divider"></divider>
     <button class="btn btn-primary add-to-cart" id="{{ id.0 }}" onclick="addProduct(this.id)">Add to cart</button>
