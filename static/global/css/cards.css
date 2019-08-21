@@ -35,8 +35,56 @@
 
 .card-divider {
   padding: 10px 0 0 0;
-  border-top: 2px solid rgb(233, 233, 233);
+  /* border-top: 2px solid rgb(233, 233, 233); */
+  border-top: 2px solid black;
 }
+
+.card-price {
+  margin: -2% 0 4% 6%;
+  font-size: 18px;
+  color: red;
+  background: linear-gradient(to right, rgb(0, 187, 187) -18%, #00a9d3 100%);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-price:hover {
+  text-decoration: underline;
+}
+
+/*
+.card-price-cut {
+  margin: -2% 0 4% 6%;
+  font-size: 18px;
+  background: linear-gradient(to right, rgb(0, 187, 187) -18%, #00a9d3 100%);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: line-through;
+}
+
+.card-price-sale-rate {
+  margin: -12.2% 0 4% 31%;
+  font-size: 14px;
+  background: linear-gradient(to right, rgb(255, 0, 0) -18%, #b90000 100%);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: line-through;
+}
+
+.card-price-new {
+  margin: -12.2% 0 4% 76%;
+  font-size: 18px;
+  display: inline;
+  background: linear-gradient(to right, rgb(0, 187, 187) -18%, #00a9d3 100%);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: line-through;
+}
+*/
 
 .card-footer {
   font-size: 18px;

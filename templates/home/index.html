@@ -2,24 +2,29 @@
 
 {% block title %}Home{% endblock title %}
 
-{% block top %}
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/png" href="/static/global/img/brand-logo.png"/>
-{% endblock top %}
-
 {% block body %}
 <div class="cards-body">
 {% for id in products.items %}
-{% comment %} <!-- {% endcomment %}
   <div class="card">
     <img class="card-thumbnail" src="{{ id.1.images.0 }}">
     <h3 class="card-title">{{ id.1.name|slice:"0:50" }}</h3>
     <p class="card-description">{{ id.1.shortDesc|slice:"0:150" }}...</p>
     <divider class="card-divider"></divider>
+    {% if 'false' in id.1.sale %}
+    <h4 class="card-price">₹ {{ id.1.price }}</h4>
+    {% else %}
+    <h4 class="card-price">₹ {{ id.1.price }} sale</h4>
+    <!--
+    <h4 class="card-price-cut">-₹ {{ id.1.price }}
+      <h4 class="card-price-sale-rate">{{ id.1.sale }} off</h4>
+      <h4 class="card-price-new">{{ id.1.price }}</h4>
+    </h4>
+    -->
+    {% endif %}
+    <divider class="card-divider"></divider>
     <button class="btn btn-primary add-to-cart" id="{{ id.0 }}" onclick="addProduct(this.id)">Add to cart</button>
     <button class="btn btn-secondary quick-view" id="{{ id.0 }}" onclick="quickView(this.id)">Quick View</button>
   </div>
-{% comment %} --> {% endcomment %}
 {% endfor %}
 </div>
 {% endblock body %}
