@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     "checkout",
     "home",
     "user",
+    "view",
 ]
 
 MIDDLEWARE = [

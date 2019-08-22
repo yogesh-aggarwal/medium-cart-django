@@ -25,4 +25,5 @@ urlpatterns = [
     path("user/", include("user.urls"), name="User"),
     path("about/", views.about, name="About"),
     path("contact/", views.contact, name="Contact"),
+    path("view/", include("view.urls"), name="View"),
 ]
