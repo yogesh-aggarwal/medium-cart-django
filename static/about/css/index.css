@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Mukta:600|Rubik&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
 .container {
-    margin: 1% 15% 0 15%;
+  margin: 1% 15% 0 15%;
 }
 
 .page-title {
-    font-size: 28px;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 800;
+  font-size: 28px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 800;
 }
-
 
 .page-description {
   font-size: 20px;
@@ -20,10 +19,22 @@
 .question {
   font-size: 25px;
   font-family: "Mukta", sans-serif;
-  margin: 25px 0 5px 0
+  margin: 25px 3% 5px 3%;
+  padding: 15px 0 0 0;
 }
 
 .answer {
   font-size: 20px;
   font-family: "Rubik", sans-serif;
+  margin: 0 3% 5px 3%;
+  padding: 0 0 15px 0;
+}
+
+.box {
+  box-shadow: 0 0 4px rgb(192, 192, 192);
+  border-radius: 10px;
+}
+
+.box:hover {
+  box-shadow: 0 0 7px rgb(192, 192, 192);
 }
