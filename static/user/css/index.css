@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Acme|Bitter|Kanit|Lexend+Deca|Lora|Mukta|Noto+Sans+JP|Oxygen|Quicksand:700|Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Acme|Bitter|Kanit|Lexend+Deca|Lora|Mukta|Noto+Sans+JP|Oxygen|Quicksand:700|Roboto+Slab&display=swap");
 
 /* 
 font-family: 'Lexend Deca', sans-serif;
@@ -38,15 +38,16 @@ font-family: 'Acme', sans-serif;
 
 .profile-name {
   color: white;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   text-align: center;
   font-size: 22px;
 }
 
 .profile-email {
   color: white;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   text-align: center;
   font-size: 15px;
   margin: 5px 0 0 0;
+  padding: 0 0 22px 0;
 }
