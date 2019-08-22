@@ -43,7 +43,6 @@ class Tools:
                 "sale": record[12],
                 "price": self.numberSystem(record[13], target="indian")
             }
-        print(parse["125785"]["reviews"])
         return parse
 
     # @staticmethod
