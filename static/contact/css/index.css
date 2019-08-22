@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans|Varela+Round&display=swap");
 
 .page-heading {
-    font-size: 30px;
-    margin: 1% 21% 0 21%;
-    font-weight: 600;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 1% 15% 0 15%;
 }
 
 .description {
-    font-size: 17px;
-    margin: 1% 21% 0 21%;
-    font-weight: 600;
+  font-size: 17px;
+  margin: 1% 15% 0 15%;
+  font-weight: 600;
 }
 
 .contact-form {
-  margin: 20px 30% 20px 30%;
+  margin: 1% 16% 0 16%;
 }
 
 .form-type {
@@ -24,26 +24,26 @@
 }
 
 .input {
-    width: 72%;
-    border: none;
-    box-shadow: 0 0 3px rgb(194, 194, 194);
-    padding: 5px 15px 5px 15px;
-    outline: none;
-    border-radius: 6px;
-    font-family: 'Varela Round', sans-serif;
+  width: 98%;
+  border: none;
+  box-shadow: 0 0 3px rgb(194, 194, 194);
+  padding: 5px 15px 5px 15px;
+  outline: none;
+  border-radius: 6px;
+  font-family: "Varela Round", sans-serif;
 }
 
 .input:hover,
 .input:active,
 .input:focus {
-    box-shadow: 0 0 5px rgb(194, 194, 194);
+  box-shadow: 0 0 5px rgb(194, 194, 194);
 }
 
 #textarea {
-    resize: none;
-    height: 200px
+  resize: none;
+  height: 200px;
 }
 
 #submitButton {
-    margin: 1% 0 1% 0;
+  margin: 1% 0 1% 0;
 }
