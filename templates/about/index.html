@@ -1,1 +1,51 @@
-Welcome to About!
+{% extends 'about/basic.html' %} {% block title %}About Us{% endblock title %}
+{% block body %}
+<div class="container">
+  <div class="page-title">
+    About Us
+  </div>
+  <div class="page-description">
+    Django based e-commerce website that contains cool designing of webpages (front-end).
+  </div>
+  <div>
+    <div class="question">
+      Q: What is this?
+    </div>
+    <div class="answer">
+      This is an e-commerce website based on Django (the web framework). This
+      project is a <b>Python + JavaScript</b>-based website.
+    </div>
+
+    <div class="question">
+      Q: Why this project?
+    </div>
+    <div class="answer">
+      This project is made for just learning purposes. Anything (multimedia)
+      used in it should be <b>copyright free</b> as it will not be used for
+      commercial purposes.
+    </div>
+
+    <div class="question">
+      Q: Who is the owner of this project?
+    </div>
+    <div class="answer">
+      Yogesh Aggarwal is the owner of this project.
+    </div>
+
+    <div class="question">
+      Q: Will this project be online when it's completed?
+    </div>
+    <div class="answer">
+      Obviously <b>no</b>. Moving any project to a large scale requires lots
+      of efforts & company of a great + large team.
+    </div>
+
+    <div class="question">
+      Q: Can anyone modify or redistribute it?
+    </div>
+    <div class="answer">
+      Strictly <b>no</b>, anyone cannot modify or redistribute it. See the license terms for more information on <a href="https://github.com/yogesh-aggarwal/medium-cart" target="_blank">GitHub</a>.
+    </div>
+  </div>
+</div>
+{% endblock body %}

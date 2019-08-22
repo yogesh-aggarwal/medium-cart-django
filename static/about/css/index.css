@@ -1,3 +1,29 @@
-body {
-    background: #000;
+@import url("https://fonts.googleapis.com/css?family=Mukta:600|Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+
+.container {
+    margin: 1% 15% 0 15%;
+}
+
+.page-title {
+    font-size: 28px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 800;
+}
+
+
+.page-description {
+  font-size: 20px;
+  margin: 1% 0 0 0;
+}
+
+.question {
+  font-size: 25px;
+  font-family: "Mukta", sans-serif;
+  margin: 25px 0 5px 0
+}
+
+.answer {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
 }
