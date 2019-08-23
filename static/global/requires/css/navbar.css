@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
 
 #nav-title {
   color: white;
@@ -22,5 +22,13 @@
 }
 
 .navbar {
-  font-family: 'Lexend Deca', sans-serif;  
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 22px;
+  padding-top: 35px;
+  margin-top: -20px;
+  box-shadow: 0 0 12px rgb(180, 180, 180);
+}
+
+.navbar:hover {
+  box-shadow: 0 0 18px rgb(180, 180, 180);
 }

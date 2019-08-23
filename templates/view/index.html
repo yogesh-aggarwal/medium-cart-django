@@ -3,5 +3,46 @@
 {% block title %}View{% endblock title %}
 
 {% block body %}
-{{ products }}
+
+{{ attribute.1 }}
+
+<div class="container">
+    <div class="main-content"><br>
+        <div class="product-name">{{ products.name }}</div>
+        <div class="product-rating">{{ products.rating }}</div>
+        <div class="broughtBy">Brought by <a href="/" class="owner-store-link">{{ products.owners.0 }}</a></div>
+        <div class="product-price">₹ {{ products.price }}</div>
+        <a href="/" class="buyButton">Buy now</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="image-view">
+        <div class="row">
+            <img class="product-image" src="{{ products.images.0 }}" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="main-content">
+        <div class="content-heading">Description</div>
+        <div class="product-description">{{ products.description }}</div>
+    </div>
+</div>
+
+<div class="container">
+    <br>
+    <div class="content-heading">Reviews</div>
+    <div class="product-reviews">
+        <ul>
+            {% for review in products.reviews %}
+            <li>
+                <div class="review-item">{{ review }}</div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
 {% endblock body %}
