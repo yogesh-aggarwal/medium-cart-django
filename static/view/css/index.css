@@ -102,6 +102,7 @@ font-family: 'PT Sans Caption', sans-serif;
   margin: -4.5% 15% 0 0;
   box-shadow: 0 0 7px rgb(190, 190, 190);
   float: right;
+  cursor: pointer;
 }
 
 .buyButton:focus {
@@ -128,6 +129,7 @@ font-family: 'PT Sans Caption', sans-serif;
   margin: -4.5% 3% 0 0;
   box-shadow: 0 0 7px rgb(190, 190, 190);
   float: right;
+  cursor: pointer;
 }
 
 .addToCartButton:focus {
