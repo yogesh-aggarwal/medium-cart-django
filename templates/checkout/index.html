@@ -1,1 +1,32 @@
-Welcome to checkout!
+{% extends 'checkout/basic.html' %}
+
+{% block title %}Checkout{% endblock title %}
+
+{% block body %}
+<div class="container">
+    <form action="/checkout/" method="post">
+        {% csrf_token %}
+        <div class="checkout-title" id="main">
+            Checkout
+        </div>
+        <input class="checkout-input" type="text" id="firstName" name="firstName" placeholder="First name">
+        <input class="checkout-input" type="text" id="lastName" name="lastName" placeholder="Last name">
+        <br>
+        <div class="checkout-title">
+            Shipping address
+        </div>
+        <input class="checkout-input" type="text" id="address" name="address" placeholder="Address">
+        <input class="checkout-input" type="phone" id="phone" name="phone" placeholder="Phone number">
+        <input class="checkout-input" type="text" id="city" name="city" placeholder="City">
+        <br>
+        <input class="checkout-input" type="text" id="country" name="country" placeholder="Country">
+        <input class="checkout-input" type="text" id="state" name="state" placeholder="State">
+        <input class="checkout-input" type="text" id="zipCode" name="zipCode" placeholder="Zip code">
+        <br>
+
+        <div class="button-container">
+            <button id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock body %}

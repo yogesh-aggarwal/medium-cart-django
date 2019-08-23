@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Cabin|Heebo|Lexend+Deca|Noto+Sans+JP|Noto+Serif|Nunito|PT+Sans+Caption|Roboto|Roboto+Slab&display=swap");
+
+/*
+font-family: 'Bree Serif', serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+.checkout-title {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 25px;
+  color: black;
+  margin: 2% 0 0.5% 0;
+}
+
+.checkout-input {
+  border: none;
+  outline: none;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  padding: 5px 15px 5px 15px;
+  margin: 10px 5% 10px 0;
+  border-radius: 7px;
+  box-shadow: 0 0 5px rgb(201, 201, 201);
+}
+
+.checkout-input:hover,
+.checkout-input:focus,
+.checkout-input:active {
+  box-shadow: 0 0 10px rgb(201, 201, 201);
+}
+
+.container {
+  padding: 2% 2% 5.5% 2%;
+  box-shadow: 0 0 5px rgb(177, 177, 177);
+  margin-top: 6%;
+  border-radius: 10px;
+}
+
+#main {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+#address {
+  width: 100%;
+}
+
+#phone,
+#city {
+  width: 44%;
+}
+
+.button-container {
+  text-align: center;
+}
+
+#submitButton {
+  position: absolute;
+  border: none;
+  color: white;
+  background: black;
+  margin: 2% 0 0 -2%;
+  padding: 0.4%;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0 0 8px rgb(192, 192, 192);
+}
+
+#submitButton:hover,
+#submitButton:focus,
+#submitButton:active {
+  box-shadow: 0 0 20px rgb(192, 192, 192);
+  outline: none;
+}

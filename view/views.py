@@ -10,7 +10,7 @@ class EndPoint:
         attributes = {
             "title": "Medium cart",
             "products": Product().parseData(Product.fetchDatabase(productId, "Product"))[f"{productId}"],
-            "ProductId": productId,
+            "productId": productId,
         }
         return render(request, "view/index.html", attributes)
 

@@ -12,8 +12,8 @@
         <div class="product-rating">{{ products.rating }}</div>
         <div class="broughtBy">Brought by <a href="/" class="owner-store-link">{{ products.owners.0 }}</a></div>
         <div class="product-price">₹ {{ products.price }}</div>
-        <button id="{{ products.id }}" onclick="addToCart(this.id)" class="addToCartButton">Add to cart</button>
-        <button id="{{ products.id }}" onclick="buyNow(this.id)" class="buyButton">Buy now</button>
+        <button id="{{ productId }}" onclick="addToCart(this.id)" class="addToCartButton">Add to cart</button>
+        <button id="{{ productId }}" onclick="buyNow(this.id)" class="buyButton">Buy now</button>
     </div>
 </div>
 
