@@ -26,5 +26,6 @@ urlpatterns = [
     path("about/", views.about, name="About"),
     path("contact/", views.contact, name="Contact"),
     path("view/", include("view.urls"), name="View"),
-    path("thank-you/", views.thankYou, name="View"),
+    path("thank-you/", views.thankYou, name="Thank-you"),
+    path("payment/", include("payment.urls"), name="Payment"),
 ]
