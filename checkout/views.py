@@ -5,7 +5,10 @@ class EndPoint:
         pass
     
     @staticmethod
-    def index(request):
+    def index(request, productId):
+        attributes = {
+            "productId": None
+        }
         if request.method == "POST":
             firstName = request.POST.get("firstName")
             lastName = request.POST.get("lastName")
@@ -16,4 +19,7 @@ class EndPoint:
             state = request.POST.get("state")
             zipCode = request.POST.get("zipCode")
             print(firstName, lastName,address, phone, city, country, state, zipCode)
-        return render(request, "checkout/index.html")
+        if request.method == "GET":
+            attributes["productId"] = productId
+
+        return render(request, "checkout/index.html", attributes)

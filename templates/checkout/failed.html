@@ -1,0 +1,19 @@
+{% extends 'checkout/basic.html' %}
+
+{% block title %}Thank You{% endblock title %}
+
+{% block top %}
+<link rel="stylesheet" href="/static/checkout/css/fail.css" />
+<script src="/static/checkout/js/fail.js"></script>
+{% endblock top %}
+
+{% block body %}
+<div class="container">
+    <div class="fail-heading">
+        Your order has been failed
+    </div>
+    <div class="fail-description">
+        Your order has been failed due to some error from payment merchant or may due to internet connectivity. Try placing the order after some time.
+    </div>
+</div>
+{% endblock body %}

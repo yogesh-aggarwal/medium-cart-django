@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Noto+Sans+JP|PT+Sans|Source+Sans+Pro&display=swap");
+
+/*
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+*/
+
+.fail-heading {
+  font-size: 25px;
+  text-align: center;
+  margin: 5% 0 5% 0;
+  font-weight: 600;
+  font-family: "Lexend Deca", sans-serif;
+  background: linear-gradient(
+    to right bottom,
+    #e7ff0e -18%,
+    rgb(255, 0, 0) 100%
+  );
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fail-description {
+  font-size: 24px;
+  margin: 5% 0 5% 0;
+}

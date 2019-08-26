@@ -15,10 +15,12 @@ def contact(request):
 
 def thankYou(request):
     if request.method == "POST":
-        # Generate hash id here
-        attributes ={
-            "id": "someHash"
-        }
-        return render(request, "checkout/thankYou.html", attributes)
+        return render(request, "checkout/thankYou.html")
+    else:
+        return HttpResponse('<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif">500 Internel server error!</h1>')
+
+def fail(request):
+    if request.method == "GET":
+        return render(request, "checkout/failed.html")
     else:
         return HttpResponse('<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif">500 Internel server error!</h1>')

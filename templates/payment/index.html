@@ -1,7 +1,32 @@
-{% extends 'payment/basic.html' %}
-
-{% block title %}Payment{% endblock title %}
-
-{% block body %}
-
-{% endblock body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PayTM</title>
+</head>
+<body>
+    <h1>Redirecting you to the payment page...</h1>
+    <h3>Please do not go back or refresh this page.</h3>
+    <form method="post" action="https://securegw-stage.paytm.in/order/process" name="paytm">
+        <table>
+        <tbody>
+            <input type="hidden" name="MID" value="{{ MID }}">
+            <input type="hidden" name="WEBSITE" value="{{ WEBSITE }}">
+            <input type="hidden" name="ORDER_ID" value="{{ ORDER_ID }}">
+            <input type="hidden" name="CUST_ID" value="{{ CUST_ID }}">
+            <input type="hidden" name="INDUSTRY_TYPE_ID" value="{{ INDUSTRY_TYPE_ID }}">
+            <input type="hidden" name="CHANNEL_ID" value="{{ CHANNEL_ID }}">
+            <input type="hidden" name="TXN_AMOUNT" value="{{ TXN_AMOUNT }}">
+            <input type="hidden" name="CALLBACK_URL" value="{{ CALLBACK_URL }}">
+            <input type="hidden" name="CHECKSUMHASH" value="{{ CHECKSUMHASH }}">
+        </tbody>
+        </table>
+        <script type="text/javascript">
+            localStorage.setItem("orderId", "{{ ORDER_ID }}")
+            document.paytm.submit();
+        </script>
+    </form>
+</body>
+</html>

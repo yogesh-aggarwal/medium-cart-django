@@ -17,7 +17,13 @@
     </div>
     <br>
     <div id="order-id">
-        <b>Order Id:</b> {{ id }}
+        <b>Order Id:</b>
     </div>
 </div>
 {% endblock body %}
+
+{% block bottom %}
+<script>
+document.getElementById("order-id").innerHTML = `<b>Order Id:</b> ${localStorage.getItem("orderId")}`;
+</script>
+{% endblock bottom %}

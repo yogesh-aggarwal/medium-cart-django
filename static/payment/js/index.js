@@ -1,1 +1,1 @@
-console.log("jklkl")
+localStorage.setItem

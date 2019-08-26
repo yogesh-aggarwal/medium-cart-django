@@ -9,7 +9,7 @@
 
 {% block body %}
 <div class="container page-container">
-    <form action="/thank-you/" method="post">
+    <form action="/payment/{{ productId }}" method="post">
         {% csrf_token %}
         <div class="checkout-title" id="main">
             Checkout
@@ -27,6 +27,7 @@
         <input class="checkout-input" type="text" id="country" name="country" placeholder="Country">
         <input class="checkout-input" type="text" id="state" name="state" placeholder="State">
         <input class="checkout-input" type="text" id="zipCode" name="zipCode" placeholder="Zip code">
+        <input class="checkout-input"buyNow id="productId" name="productId" type="hidden">
         <br>
 
         <div class="button-container">

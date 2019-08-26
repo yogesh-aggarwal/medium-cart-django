@@ -1,4 +1,4 @@
 buyNow = _id => {
   localStorage.setItem("productId", _id);
-  location.href = "/checkout";
+  location.href = `/checkout/${_id}`;
 };
