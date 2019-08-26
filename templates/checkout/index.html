@@ -2,9 +2,14 @@
 
 {% block title %}Checkout{% endblock title %}
 
+{% block top %}
+<link rel="stylesheet" href="/static/checkout/css/index.css" />
+<script src="/static/checkout/js/index.js"></script>
+{% endblock top %}
+
 {% block body %}
-<div class="container">
-    <form action="/checkout/" method="post">
+<div class="container page-container">
+    <form action="/thank-you/" method="post">
         {% csrf_token %}
         <div class="checkout-title" id="main">
             Checkout

@@ -1,0 +1,23 @@
+{% extends 'checkout/basic.html' %}
+
+{% block title %}Thank You{% endblock title %}
+
+{% block top %}
+<link rel="stylesheet" href="/static/checkout/css/thankYou.css" />
+<script src="/static/checkout/js/thankYou.js"></script>
+{% endblock top %}
+
+{% block body %}
+<div class="container">
+    <div class="thanks-heading">
+        Thank you for shopping with Medium Cart
+    </div>
+    <div class="thanks-description">
+        Thanks for visiting & shopping with <b>Medium Cart</b>. Your order has been successfully placed & will be shipped on the delivery date.
+    </div>
+    <br>
+    <div id="order-id">
+        <b>Order Id:</b> {{ id }}
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Noto+Sans+JP|PT+Sans|Source+Sans+Pro&display=swap");
+
+/*
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+*/
+
+.thanks-heading {
+  font-size: 25px;
+  text-align: center;
+  margin: 5% 0 5% 0;
+  font-weight: 600;
+  font-family: "Lexend Deca", sans-serif;
+  background: linear-gradient(
+    to right bottom,
+    rgb(0, 173, 52) -18%,
+    #00ccd3 100%
+  );
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.thanks-description {
+  font-size: 22px;
+  margin: 5% 0 5% 0;
+}
+
+#order-id {
+  font-family: "Lexend Deca", sans-serif;
+  background: linear-gradient(
+    to right bottom,
+    rgb(0, 97, 187) -18%,
+    #009fa5 100%
+  );
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#order-id::selection {
+  background: black;
+  -webkit-text-fill-color: white;
+}

@@ -37,7 +37,7 @@ font-family: 'Roboto Slab', serif;
   box-shadow: 0 0 10px rgb(201, 201, 201);
 }
 
-.container {
+.page-container {
   padding: 2% 2% 5.5% 2%;
   box-shadow: 0 0 5px rgb(177, 177, 177);
   margin-top: 6%;
@@ -68,8 +68,8 @@ font-family: 'Roboto Slab', serif;
   border: none;
   color: white;
   background: black;
-  margin: 2% 0 0 -2%;
-  padding: 0.4%;
+  margin: 32px 0 0 -50px;
+  padding: 10px 16px 10px 16px;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 600;

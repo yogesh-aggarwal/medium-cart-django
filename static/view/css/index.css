@@ -25,7 +25,8 @@ font-family: 'PT Sans Caption', sans-serif;
 }
 
 .product-image {
-  height: 380px;
+  height: 78%;
+  width: 58%;
   display: block;
   margin: 0 auto;
 }
