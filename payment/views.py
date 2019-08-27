@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponseServerError
 from django.views.decorators.csrf import csrf_exempt
 from .paytm import checksum
 from sql_tools import sqlite
@@ -35,18 +36,21 @@ class EndPoint:
     @csrf_exempt
     def payRequest(request):
         # Paytm will send post request here.
-        form = request.POST
-        responseDict = {}
-        for i in form.keys():
-            responseDict[i] = form[i]
-            if i == "CHECKSUMHASH":
-                Checksum = form[i]
-        print(responseDict)
-        verify = checksum.verify_checksum(responseDict, "kbzk1DSbJiV_O3p5", Checksum)
-        if verify:
-            if responseDict["RESPCODE"] == "01":
-                print("order-success")
-                return render(request, "checkout/thankYou.html")
-            else:
-                print("order-unsuccess")
-                return render(request, "checkout/failed.html")
+        try:
+            form = request.POST
+            responseDict = {}
+            for i in form.keys():
+                responseDict[i] = form[i]
+                if i == "CHECKSUMHASH":
+                    Checksum = form[i]
+            print(responseDict)
+            verify = checksum.verify_checksum(responseDict, "kbzk1DSbJiV_O3p5", Checksum)
+            if verify:
+                if responseDict["RESPCODE"] == "01":
+                    print("order-success")
+                    return render(request, "checkout/thankYou.html")
+                else:
+                    print("order-unsuccess")
+                    return render(request, "checkout/failed.html")
+        except Exception:
+            return HttpResponseServerError("500 Service not available.")
