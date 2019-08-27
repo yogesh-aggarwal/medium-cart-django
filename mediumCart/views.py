@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from sql_tools import sqlite
 
 
 def about(request):
@@ -10,7 +11,9 @@ def contact(request):
         name = request.POST.get("fullName")
         email = request.POST.get("email")
         issue = request.POST.get("issue")
-        # Now insert them into the database "contact.sqlite3"
+        print(name, email, issue)
+        sqlite.connect("contacts.sqlite3", validateDatabase=False, raiseError=False)
+        # INSERT DATA INTO DATABASE
     return render(request, "contact/index.html")
 
 def thankYou(request):
