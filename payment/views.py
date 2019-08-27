@@ -27,6 +27,7 @@ class EndPoint:
         paytmParams["CHECKSUMHASH"] = checksum.generate_checksum(
             paytmParams, "kbzk1DSbJiV_O3p5"
         )
+        # sqlite.execute(f'SELECT price FROM PRODUCT WHERE id="{productId}"')[0][0][0]
         return render(request, "payment/index.html", paytmParams)
 
     @csrf_exempt

@@ -36,3 +36,9 @@
     </form>
 </div>
 {% endblock body %}
+
+{% block bottom %}
+<script>
+localStorage.setItem("price", "{{ productPrice }}")
+</script>
+{% endblock bottom %}
