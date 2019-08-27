@@ -1,84 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Medium Cart - {% block title %}{% endblock title %}</title>
+{% extends 'global/navbar.html' %}
 
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="/static/global/requires/css/semantic.min.css"
-    />
-    <!--
-    <link
-      rel="stylesheet"
-      href="/static/global/requires/css/bootstrap.min.css"
-    />
-    -->
-    <link rel="stylesheet" href="/static/global/requires/css/argon.min.css" />
-    <link rel="stylesheet" href="/static/global/css/cards.css" />
-    <link rel="stylesheet" href="/static/global/css/common.css" />
-    <link rel="stylesheet" href="/static/home/css/index.css" />
-    <link rel="stylesheet" href="/static/global/requires/css/navbar.css" />
-    <link rel="stylesheet" href="/static/global/requires/css/global.css" />
+{% block titleBar %}{% block title %}{% endblock title %}{% endblock titleBar %}
 
-    <!-- JS -->
-    <script src="/static/global/requires/js/jquery.3.4.1.js"></script>
-    <script src="/static/global/requires/js/argon-dashboard.js"></script>
-    <!-- <script src="/static/global/requires/js/bootstrap.js"></script> -->
-    <script src="/static/global/requires/js/argon.min.js"></script>
-    <script src="/static/global/js/tools.js"></script>
-    <script src="/static/home/js/index.js"></script>
+{% block topBar %}
+  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="/static/global/requires/css/semantic.min.css"
+  />
+  <!--
+  <link
+    rel="stylesheet"
+    href="/static/global/requires/css/bootstrap.min.css"
+  />
+  -->
+  <link rel="stylesheet" href="/static/global/requires/css/argon.min.css" />
+  <link rel="stylesheet" href="/static/global/css/cards.css" />
+  <link rel="stylesheet" href="/static/global/css/common.css" />
+  <link rel="stylesheet" href="/static/home/css/index.css" />
+  <link rel="stylesheet" href="/static/global/requires/css/navbar.css" />
+  <link rel="stylesheet" href="/static/global/requires/css/global.css" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="/static/global/img/brand-logo.png"/>
+  <!-- JS -->
+  <script src="/static/global/requires/js/jquery.3.4.1.js"></script>
+  <script src="/static/global/requires/js/argon-dashboard.js"></script>
+  <!-- <script src="/static/global/requires/js/bootstrap.js"></script> -->
+  <script src="/static/global/requires/js/argon.min.js"></script>
+  <script src="/static/global/js/tools.js"></script>
+  <script src="/static/home/js/index.js"></script>
 
-    {% block top %} {% endblock top %}
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <img src="/static/global/img/brand-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      <a class="navbar-brand" id="nav-title" href="/">Medium cart</a>
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/user">Profile</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Category
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="">Category 1</a>
-              <a class="dropdown-item" href="">Category 2</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="">Category 3</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" id="search-box" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="/static/global/img/brand-logo.png"/>
 
-    {% block body %}{% endblock body %}
-  </body>
+  {% block top %}{% endblock top %}
+{% endblock topBar %}
 
-  {% block bottom %} {% endblock bottom %}
-</html>
+{% block bodyBar %}{% block body %}{% endblock body %}{% endblock bodyBar %}
+
+{% block bottomBar %}{% block bottom %}{% endblock bottom %}{% endblock bottomBar %}
