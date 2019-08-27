@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from .paytm import checksum
+from sql_tools import sqlite
 import hashlib
 import time
 
@@ -11,12 +12,13 @@ class EndPoint:
 
     @staticmethod
     def index(request, productId):
+        sqlite.connect("/media/yogesh/Development/Python/django/mediumCart/database/data/products.sqlite3", raiseError=False)
         paytmParams = {
             "MID": "WorldP64425807474247",
             "ORDER_ID": hashlib.sha1(
                 str(productId).encode("utf-8") + str(time.time()).encode("utf-8")
             ).hexdigest()[-15:],
-            "TXN_AMOUNT": "3000",
+            "TXN_AMOUNT": str(sqlite.execute(f'SELECT price FROM PRODUCT WHERE id="{productId}"', "/media/yogesh/Development/Python/django/mediumCart/database/data/products.sqlite3")[0][0][0]),
             "CUST_ID": "acfff@paytm.com",
             "INDUSTRY_TYPE_ID": "Retail",
             "WEBSITE": "WEBSTAGING",
