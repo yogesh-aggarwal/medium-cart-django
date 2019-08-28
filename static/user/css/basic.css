@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Bitter|Kanit|Lexend+Deca|Lora|Mukta|Noto+Sans+JP|Oxygen|Quicksand:700|Roboto+Slab&display=swap");
+
+/* 
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Lora', serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Acme', sans-serif;
+*/
+
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.profile {
+  width: 102%;
+  background: rgb(255, 130, 130);
+  /* background: linear-gradient(to right, rgb(114, 0, 207) 3%, #00bac0 100%);; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(182, 182, 182);
+}
+
+.profile:hover {
+  box-shadow: 0 0 15px rgb(182, 182, 182);
+}
+
+.profile-image {
+  max-width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: -12px;
+  border-radius: 150px;                         
+  padding: 35px 35px 35px 35px;
+}
+
+.profile-name {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+  font-size: 22px;
+}
+
+.profile-email {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  margin: 5px 0 0 0;
+  padding: 0 0 22px 0;
+}
+
+.sidebar {
+  /* background: linear-gradient(to right, rgb(114, 0, 207) 3%, #00bac0 100%); */
+  width: 25%;
+  padding: 1% 2% 1% 1.8%;
+  margin: 2%;
+  float: left;
+}
+
+.profile-content-tab {
+  margin: 3% 3% 4% 28%;
+}
+
+.profile-content {
+  margin: -1.5% 4% 1.5% 30%;
+  font-size: 20px;
+}
+
+.tab-switch-btn {
+  margin: 0 5px 0 5px;
+  padding: 1% 5% 1% 6%;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, rgb(0, 162, 255) -58%,rgb(0, 89, 255) 100%);
+  border-radius: 10px;
+}
+
+.tab-switch-btn:hover,
+.tab-switch-btn:active,
+.tab-switch-btn:focus {
+  background: linear-gradient(to right, rgb(0, 117, 185) -58%,rgb(0, 110, 255) 100%);
+  color: white;
+}

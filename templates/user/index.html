@@ -1,9 +1,98 @@
 {% extends 'user/basic.html' %}
 
+{% block top %}
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/user/css/index.css">
+  
+  <!-- JS -->
+  <script src="/static/user/js/index.js"></script>
+{% endblock top %}
+
 {% block title %}Profile{% endblock title %}
 
 {% block body %}
 <div class="profile-content">
-    General content here.
+  <div class="content-heading">
+    Your information
+  </div>
+  <div class="info-block" id="name">
+    <div class="content-sub-heading">
+      Name
+    </div>
+    <input class="attrib-inp" type="text" id="name-input" maxlength="50" />
+  </div>
+  <div class="info-block" id="email">
+    <div class="content-sub-heading">
+      Email
+    </div>
+    <input class="attrib-inp" type="email" id="email-input" />
+  </div>
+  <div class="info-block" id="phone">
+    <div class="content-sub-heading">
+      Phone Number
+    </div>
+    <input class="attrib-inp" type="phone" id="phone-input" />
+  </div>
+  <div class="info-block" id="age">
+    <div class="content-sub-heading">
+      Age
+    </div>
+    <input class="attrib-inp" type="number" id="age-input" />
+  </div>
+
+  <div class="content-heading">
+    Preferences
+  </div>
+  
+  <div class="content-sub-heading">
+    Language
+  </div>
+  <div id="current-lang">
+      Current: English
+  </div>
+    <select id="lang-option">
+    <option value="volvo">English</option>
+    <option value="saab">Hindi</option>
+    <option value="mercedes">German</option>
+    <option value="audi">French</option>
+    </select>
+  <div class="content-sub-heading">
+    Advertising
+  </div>
+  <div class="container-block">
+    <input type="radio" class="radio-btn" name="radio-btn1" id="adv-radio-btn" value="type">
+    <label for="type" class="radio-label">
+        Personlized, interest based ads from Medium Cart
+    </label>
+  </div>
+  <div class="container-block">
+    <input type="radio" class="radio-btn" name="radio-btn1" id="adv-radio-btn" value="type">
+    <label for="type" class="radio-label">
+        Do Not Personalize Ads from Medium Cart for this Internet Browser
+    </label>
+  </div>
+
+  <div class="content-sub-heading">
+    Recieve Email for
+  </div>
+  <div class="container-block">
+    <input type="checkbox" class="checkbox-btn" name="checkbox-btn1" id="email-checkbox-btn" value="type">
+    <label for="type" class="checkbox-label">
+        New products
+    </label>
+  </div>
+  <div class="container-block">
+    <input type="checkbox" class="checkbox-btn" name="checkbox-btn1" id="email-checkbox-btn" value="type">
+    <label for="type" class="checkbox-label">
+        Placed orders
+    </label>
+  </div>
+  <div class="container-block">
+    <input type="checkbox" class="checkbox-btn" name="checkbox-btn1" id="email-checkbox-btn" value="type" disabled checked>
+    <label for="type" class="checkbox-label">
+        Security & privacy policy
+    </label>
+  </div>
+  <button id="save-btn" onclick="saveSettings('general');">Save</button>
 </div>
 {% endblock body %}
