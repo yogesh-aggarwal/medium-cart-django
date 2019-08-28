@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Acme|Bitter|Kanit|Lexend+Deca|Lora|Mukta|Noto+Sans+JP|Oxygen|Quicksand:700|Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Acme|Bitter|Work+Sans:500|Kanit|Lexend+Deca|Lora|Mukta|Noto+Sans+JP|Oxygen|Quicksand:700|Roboto+Slab&display=swap");
 
 /* 
 font-family: 'Lexend Deca', sans-serif;
@@ -8,6 +8,7 @@ font-family: 'Noto Sans JP', sans-serif;
 font-family: 'Oxygen', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Bitter', serif;
+font-family: 'Work Sans', sans-serif;
 font-family: 'Kanit', sans-serif;
 font-family: 'Mukta', sans-serif;
 font-family: 'Acme', sans-serif;
@@ -24,15 +25,16 @@ font-family: 'Acme', sans-serif;
 }
 
 .content-heading {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 600;
   margin: 1% 0 1% 0;
 }
 
 .content-sub-heading {
   font-size: 23px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
   margin: 1% 0 1% 0;
-  font-family: 'Roboto Slab', serif;
 }
 
 .attrib-inp {
