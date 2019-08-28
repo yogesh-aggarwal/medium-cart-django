@@ -12,6 +12,39 @@
   {% block top %}{% endblock top %}
 {% endblock topBar %}
 
-{% block bodyBar %}{% block body %}{% endblock body %}{% endblock bodyBar %}
+{% block bodyBar %}
+<div class="sidebar">
+    <div class="profile">
+        <img src="/static/img/unknownProfile.png" alt="" class="profile-image">
+        <div class="profile-name">
+            Yogesh Aggarwal
+        </div>
+        <div class="profile-email">
+            developeryogeshgit@gmail.com
+        </div>
+    </div>
+</div>
+<div class="profile-content-tab">
+    <div class="tab-switch">
+        <a href="/user" class="tab-switch-btn">
+            General
+        </a>
+        <a href="/user/security" class="tab-switch-btn">
+            Login & security
+        </a>
+        <a href="/user/address" class="tab-switch-btn">
+            Your addresses
+        </a>
+        <a href="/user/payment" class="tab-switch-btn">
+            Payment options
+        </a>
+        <a href="/user/stuff" class="tab-switch-btn">
+            My stuff
+        </a>
+    </div>
+</div>
+{% block body %}
+{% endblock body %}
+{% endblock bodyBar %}
 
 {% block bottomBar %}{% block bottom %}{% endblock bottom %}{% endblock bottomBar %}
