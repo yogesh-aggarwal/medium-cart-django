@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.http import HttpResponse
 from sql_tools import sqlite
 
@@ -34,3 +34,9 @@ def fail(request):
         return HttpResponse(
             '<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif">500 Internel server error!</h1>'
         )
+
+
+def handler404(request, exception, template_name="global/404.html"):
+    response = render_to_response("global/404.html")
+    response.status_code = 404
+    return response

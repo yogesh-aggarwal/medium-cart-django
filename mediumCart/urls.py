@@ -31,3 +31,5 @@ urlpatterns = [
     path("thank-you/", views.thankYou, name="Thank-you"),
     path("fail", views.fail, name="Failed-payment"),
 ]
+
+handler404 = 'mediumCart.views.handler404'

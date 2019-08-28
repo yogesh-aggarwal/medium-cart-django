@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "[Django] Run server",
+            "label": "[Django] Run server [Debug=True]",
             "type": "shell",
             "command": "python3 manage.py runserver",
             "presentation": {
@@ -18,7 +18,22 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "[Django] Run server [Debug=False]",
+            "type": "shell",
+            "command": "python3 manage.py runserver --insecure",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": []
         },
         {
             "label": "[Django] Make migrations",

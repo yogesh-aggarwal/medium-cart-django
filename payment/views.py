@@ -63,4 +63,4 @@ class EndPoint:
                     print("order-unsuccess")
                     return render(request, "checkout/failed.html")
         except Exception:
-            return HttpResponseServerError("500 Service not available.")
+            return render(request, "global/500.html")
