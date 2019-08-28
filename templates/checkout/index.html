@@ -39,6 +39,7 @@
 
 {% block bottom %}
 <script>
-localStorage.setItem("price", "{{ productPrice }}")
+removeFooter();
+localStorage.setItem("price", "{{ productPrice }}");
 </script>
 {% endblock bottom %}

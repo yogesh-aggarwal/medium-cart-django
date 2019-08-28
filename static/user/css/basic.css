@@ -34,7 +34,7 @@ font-family: 'Acme', sans-serif;
   display: block;
   margin: auto;
   margin-bottom: -12px;
-  border-radius: 150px;                         
+  border-radius: 100%;                         
   padding: 35px 35px 35px 35px;
 }
 

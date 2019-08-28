@@ -32,3 +32,44 @@
 .navbar:hover {
   box-shadow: 0 0 18px rgb(180, 180, 180);
 }
+
+.nav-block {
+  position: static;
+}
+
+footer {
+  background: #000;
+  margin-top: 2.5%;
+  padding: 3% 4% 4% 4%;
+}
+
+footer #brand-logo {
+  margin: 0 0 -130% 0;
+  width: 100px;
+}
+
+footer .logo {
+  display: inline-block;
+}
+
+footer .footer-content {
+  margin-left: 14%;
+  margin-right: 14%;
+}
+
+footer ul {
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0 6% 0 6%;
+  cursor: pointer;
+}
+
+footer li {
+}
+
+footer li:hover {
+  color: #c1c1c1;
+}
