@@ -12,3 +12,40 @@ font-family: 'PT Sans Caption', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif;
 */
+
+.content {
+  height: 70%;
+  margin: 5% 10% 5% 10%;
+  padding: 1% 2% 1% 2%;
+  box-shadow: 0 0 10px #c1c1c1;
+  border-radius: 10px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.content:hover,
+.content:active,
+.content:focus {
+  box-shadow: 0 0 14px #c1c1c1;
+}
+
+.cart-title {
+  font-size: 30px;
+}
+
+.preview-image {
+  height: 150px;
+  border-radius: 10px;
+}
+
+.preview-card {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.preview {
+  width: 70%;
+}
+
+.preview-card-content {
+  margin: -15% 0 0 28%;
+}

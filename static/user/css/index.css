@@ -13,12 +13,14 @@ font-family: 'Mukta', sans-serif;
 font-family: 'Acme', sans-serif;
 */
 
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+
 .profile {
-  /* height: 300px; */
-  width: 400px;
-  /* background: linear-gradient(to right, rgb(114, 0, 207) 3%, #00bac0 100%);; */
+  width: 102%;
   background: rgb(255, 130, 130);
-  margin: 30px;
+  /* background: linear-gradient(to right, rgb(114, 0, 207) 3%, #00bac0 100%);; */
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(182, 182, 182);
 }
@@ -28,12 +30,11 @@ font-family: 'Acme', sans-serif;
 }
 
 .profile-image {
-  height: 300px;
-  width: 300px;
+  max-width: 70%;
   display: block;
   margin: auto;
   margin-bottom: -12px;
-  border-radius: 150px;
+  border-radius: 150px;                         
   padding: 35px 35px 35px 35px;
 }
 
@@ -51,4 +52,17 @@ font-family: 'Acme', sans-serif;
   font-size: 15px;
   margin: 5px 0 0 0;
   padding: 0 0 22px 0;
+}
+
+.sidebar {
+  /* background: linear-gradient(to right, rgb(114, 0, 207) 3%, #00bac0 100%); */
+  width: 25%;
+  padding: 1% 2% 1% 1.8%;
+  margin: 2%;
+  float: left;
+}
+
+.profile-content {
+  float: right;
+  margin: -22% 3% 0 28%;
 }
