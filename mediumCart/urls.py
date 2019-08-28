@@ -30,6 +30,7 @@ urlpatterns = [
     path("payment/", include("payment.urls"), name="Payment"),
     path("thank-you/", views.thankYou, name="Thank-you"),
     path("fail", views.fail, name="Failed-payment"),
+    path("search/", include("search.urls"), name="Search"),
 ]
 
 handler404 = 'mediumCart.views.handler404'
