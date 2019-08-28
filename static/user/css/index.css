@@ -76,6 +76,8 @@ font-family: 'Acme', sans-serif;
   padding: 1% 5% 1% 6%;
   outline: none;
   color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
   background: linear-gradient(to right, rgb(0, 162, 255) -58%,rgb(0, 89, 255) 100%);
   border-radius: 10px;
 }
