@@ -14,7 +14,7 @@ class EndPoint:
     @staticmethod
     def index(request, productId):
         sqlite.connect(
-            "/media/yogesh/Development/Python/django/mediumCart/database/data/products.sqlite3",
+            "database/data/products.sqlite3",
             raiseError=False,
         )
         paytmParams = {
@@ -25,7 +25,7 @@ class EndPoint:
             "TXN_AMOUNT": str(
                 sqlite.execute(
                     f'SELECT price FROM PRODUCT WHERE id="{productId}"',
-                    "/media/yogesh/Development/Python/django/mediumCart/database/data/products.sqlite3",
+                    "database/data/products.sqlite3",
                 )[0][0][0]
             ),
             "CUST_ID": "acfff@paytm.com",
