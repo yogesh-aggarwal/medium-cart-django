@@ -38,6 +38,8 @@
 }
 
 footer {
+  bottom: 0;
+  width: 100%;
   background: #000;
   margin-top: 2.5%;
   padding: 3% 4% 4% 4%;

@@ -10,6 +10,10 @@ font-family: 'Bitter', serif;
 font-family: 'Kanit', sans-serif;
 */
 
+* {
+  transition: all .5s;
+}
+
 body {
   font-size: 16px;
   font-family: 'Bitter', serif;
