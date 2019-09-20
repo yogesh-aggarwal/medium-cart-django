@@ -12,9 +12,11 @@ font-family: 'Kanit', sans-serif;
 
 * {
   transition: all .5s;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 body {
   font-size: 16px;
   font-family: 'Bitter', serif;
+  margin-bottom: 0;
 }

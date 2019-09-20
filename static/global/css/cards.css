@@ -1,94 +1,93 @@
-.card {
-  width: 300px;
-  margin: 15px 10px 10px 15px;
-  padding: 0 0 2px 0;
-  box-shadow: 0 0 5px rgb(202, 202, 202);
+.cards {
+  text-align: center;
+  margin-top: 2em;
   position: relative;
+}
+
+.cards .card {
   border-radius: 10px;
+  text-align: left;
   display: inline-block;
+  width: 19em;
+  height: 29.5rem;
+  -webkit-box-shadow: 0 1px 10px #c1c1c1;
+          box-shadow: 0 1px 10px #c1c1c1;
+  margin: 10px 22px 10px 22px;
 }
 
-.card:hover {
-  box-shadow: 0 0 10px rgb(182, 182, 182);
+.cards .card .card-thumbnail {
+  width: 19em;
 }
 
-.card-thumbnail {
-  height: 220px;
+.cards .card .card-thumbnail img {
+  border-radius: 10px 10px 0 0;
   width: 100%;
-  margin: 0 0 8px 0;
-  box-shadow: 0 0 3px rgb(190, 190, 190);
-  border-radius: 10px 10px 5px 5px;
+  height: 12em;
 }
 
-.card-title {
+.cards .card .card-body {
+  padding: 0 15px 0 15px;
+}
+
+.cards .card .card-price {
+  color: white;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-gradient(linear, right top, left top, from(#40a75f), to(#5ec4e6));
+  background: linear-gradient(to left, #40a75f, #5ec4e6);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.cards .card .card-btns {
+  padding: 0 1rem 0 1rem;
+}
+
+.cards .card .card-btns .add-to-cart {
+  float: left;
+  width: 104px;
+  padding: 8px 12px 8px 12px;
+  font-size: 14px;
+  border-radius: 0.375rem;
+  background: -webkit-gradient(linear, right top, left top, from(#4776e6), to(#8e54e9));
+  background: linear-gradient(to left, #4776e6, #8e54e9);
+  color: #fff;
   display: block;
-  margin: 0 0 0 13px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 22px;
-  font-weight: 600;
+  outline: none;
+  -webkit-box-shadow: 0 2px 10px #c1c1c1;
+          box-shadow: 0 2px 10px #c1c1c1;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.card-description {
+.cards .card .card-btns .add-to-cart:hover {
+  -webkit-box-shadow: 0 5px 10px #c1c1c1;
+          box-shadow: 0 5px 10px #c1c1c1;
+}
+
+.cards .card .card-btns .quick-view {
+  float: right;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 8px 12px 8px 12px;
   font-size: 14px;
-  margin: 10px 0 18px 13px;
+  border-radius: 0.375rem;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: 0 1px 3px #c1c1c1;
+          box-shadow: 0 1px 3px #c1c1c1;
+  border: none;
+  outline: none;
 }
 
-.card-divider {
-  padding: 10px 0 0 0;
-  /* border-top: 2px solid rgb(233, 233, 233); */
-  border-top: 2px solid black;
+.cards .card .card-btns .quick-view:hover {
+  -webkit-box-shadow: 0 2px 3px #c1c1c1;
+          box-shadow: 0 2px 3px #c1c1c1;
 }
-
-.card-price {
-  margin: -2% 0 4% 6%;
-  font-size: 18px;
-  color: red;
-  background: linear-gradient(to right, rgb(0, 187, 187) -18%, #00a9d3 100%);
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.card-price:hover {
-  text-decoration: underline;
-}
-
-/*
-.card-price-cut {
-  margin: -2% 0 4% 6%;
-  font-size: 18px;
-  background: linear-gradient(to right, rgb(0, 187, 187) -18%, #00a9d3 100%);
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: line-through;
-}
-
-.card-price-sale-rate {
-  margin: -12.2% 0 4% 31%;
-  font-size: 14px;
-  background: linear-gradient(to right, rgb(255, 0, 0) -18%, #b90000 100%);
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: line-through;
-}
-
-.card-price-new {
-  margin: -12.2% 0 4% 76%;
-  font-size: 18px;
-  display: inline;
-  background: linear-gradient(to right, rgb(0, 187, 187) -18%, #00a9d3 100%);
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: line-through;
-}
-*/
-
-.card-footer {
-  font-size: 18px;
-  margin: 10px 0 18px 13px;
-  padding: 10px 0 0 0;
-  border-top: 2px solid rgb(233, 233, 233);
-}
+/*# sourceMappingURL=cards.css.map */

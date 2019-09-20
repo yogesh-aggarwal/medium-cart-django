@@ -1,52 +1,115 @@
-@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
-
-#nav-title {
-  color: white;
-  font-size: 16px;
-  letter-spacing: 2px;
-  margin: 0 1% 0 1%;
-  text-transform: uppercase;
+header {
+  width: 100.86%;
+  margin: -1em 0 1rem -0.5em;
+  font-size: 18px;
 }
 
-#nav-title:hover {
-  color: rgb(238, 238, 238);
+header nav {
+  padding: 1em 10px 3px 1em;
+  background: #000;
+  color: #fff;
+  -webkit-box-shadow: 0 0 25px #c1c1c1;
+          box-shadow: 0 0 25px #c1c1c1;
+  border-radius: 0 0 18px 18px;
 }
 
-#search-box {
-  width: 320px;
+header nav:hover {
+  -webkit-box-shadow: 0 0 35px #c1c1c1;
+          box-shadow: 0 0 35px #c1c1c1;
 }
 
-#search-box:focus,
-#search-box:hover {
-  width: 400px;
+header nav .brand {
+  float: left;
+  margin: 8px 2em 6px 6px;
 }
 
-.navbar {
-  font-family: "Lexend Deca", sans-serif;
-  border-radius: 22px;
-  padding-top: 35px;
-  margin-top: -20px;
-  box-shadow: 0 0 12px rgb(180, 180, 180);
+header nav .brand img {
+  float: left;
+  height: 30px;
+  width: 30px;
 }
 
-.navbar:hover {
-  box-shadow: 0 0 18px rgb(180, 180, 180);
+header nav .brand a {
+  float: right;
+  color: #fff;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  margin: 4px 0 0 8px;
 }
 
-.nav-block {
-  position: static;
+header nav .brand a:hover {
+  color: #eee;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 13px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 7px 0 7px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #c1c1c1;
+}
+
+header nav .search-form {
+  float: right;
+  margin: -2.6em 1em 0 0;
+}
+
+header nav .search-form input {
+  border: none;
+  padding: 9px 10px 9px 10px;
+  width: 18em;
+  font-size: 15px;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+header nav .search-form input:hover, header nav .search-form input:focus, header nav .search-form input:active {
+  width: 22em;
+}
+
+header nav button {
+  border: none;
+  outline: none;
+  border-radius: 0.375rem;
+  padding: 9px 11px 8px 10px;
+  margin-left: 10px;
+  font-size: 15px;
+  background: #fff;
+  color: #000;
+  -webkit-box-shadow: 0 2px 5px #c1c1c1;
+          box-shadow: 0 2px 5px #c1c1c1;
+}
+
+header nav button:hover {
+  -webkit-box-shadow: 0 2px 20px #c1c1c1;
+          box-shadow: 0 2px 20px #c1c1c1;
 }
 
 footer {
   bottom: 0;
-  width: 100%;
+  width: 92.85%;
+  margin-left: -8px;
   background: #000;
   margin-top: 2.5%;
   padding: 3% 4% 4% 4%;
 }
 
 footer #brand-logo {
-  margin: 0 0 -130% 0;
+  margin: 0 0 -100% 0;
+  -webkit-box-shadow: 0 1px 10px seashell;
+          box-shadow: 0 1px 10px seashell;
+  border-radius: 100%;
   width: 100px;
 }
 
@@ -69,9 +132,7 @@ footer ul {
   cursor: pointer;
 }
 
-footer li {
-}
-
-footer li:hover {
+footer footer li:hover {
   color: #c1c1c1;
 }
+/*# sourceMappingURL=navbar.css.map */
