@@ -18,7 +18,7 @@ font-family: 'Acme', sans-serif;
 }
 
 .profile {
-  width: 102%;
+  width: 90%;
   background: rgb(255, 130, 130);
   /* background: linear-gradient(to right, rgb(114, 0, 207) 3%, #00bac0 100%);; */
   border-radius: 10px;
@@ -30,7 +30,7 @@ font-family: 'Acme', sans-serif;
 }
 
 .profile-image {
-  max-width: 70%;
+  max-width: 60%;
   display: block;
   margin: auto;
   margin-bottom: -12px;
@@ -78,6 +78,7 @@ font-family: 'Acme', sans-serif;
   outline: none;
   color: white;
   font-weight: 600;
+  text-decoration: none;
   letter-spacing: 1px;
   background: linear-gradient(to right, rgb(0, 162, 255) -58%,rgb(0, 89, 255) 100%);
   border-radius: 10px;
